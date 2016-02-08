@@ -18,7 +18,7 @@
 		69CA79F41C61575800463653 /* BusinessCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CA79F31C61575800463653 /* BusinessCell.swift */; settings = {ASSET_TAGS = (); }; };
 		69F3FFF11C67B8DC00B4258D /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F3FFF01C67B8DC00B4258D /* DetailsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		69F3FFF31C680E6100B4258D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F3FFF21C680E6100B4258D /* MapViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		69F3FFF51C684CE700B4258D /* yelpDemo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 69F3FFF41C684CE700B4258D /* yelpDemo.gif */; settings = {ASSET_TAGS = (); }; };
+		69F3FFF71C684E8A00B4258D /* yelpDemo1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 69F3FFF61C684E8A00B4258D /* yelpDemo1.gif */; settings = {ASSET_TAGS = (); }; };
 		90B718C590BD546DEFEF0D61 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3C5CF4FD317D72ABE2AAC4 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +48,7 @@
 		69CA79F31C61575800463653 /* BusinessCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessCell.swift; sourceTree = "<group>"; };
 		69F3FFF01C67B8DC00B4258D /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		69F3FFF21C680E6100B4258D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		69F3FFF41C684CE700B4258D /* yelpDemo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = yelpDemo.gif; sourceTree = "<group>"; };
+		69F3FFF61C684E8A00B4258D /* yelpDemo1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = yelpDemo1.gif; sourceTree = "<group>"; };
 		97D8B2E3FFD1AF4F4A707E47 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		AA3C5CF4FD317D72ABE2AAC4 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD540129B10DFE60E8C24E2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -96,7 +96,7 @@
 		222D8A5719CCF9F900D2DB53 /* Yelp */ = {
 			isa = PBXGroup;
 			children = (
-				69F3FFF41C684CE700B4258D /* yelpDemo.gif */,
+				69F3FFF61C684E8A00B4258D /* yelpDemo1.gif */,
 				69CA79F21C61573D00463653 /* Views */,
 				22AAAA9A1AEA0AA100A544AF /* Models */,
 				222D8A7A19CCFAAA00D2DB53 /* API */,
@@ -272,9 +272,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				222D8A6019CCF9F900D2DB53 /* Main.storyboard in Resources */,
+				69F3FFF71C684E8A00B4258D /* yelpDemo1.gif in Resources */,
 				222D8A6519CCF9F900D2DB53 /* LaunchScreen.xib in Resources */,
 				222D8A6219CCF9F900D2DB53 /* Images.xcassets in Resources */,
-				69F3FFF51C684CE700B4258D /* yelpDemo.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
