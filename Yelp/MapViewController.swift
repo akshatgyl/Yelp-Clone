@@ -47,8 +47,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         }
         else {
             annotationView!.annotation = annotation
-        }
-        
+        }t
         return annotationView
     }
     
