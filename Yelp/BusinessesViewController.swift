@@ -45,7 +45,7 @@ class BusinessesViewController: UIViewController, UITableViewDataSource, UITable
             self?.tableView.dg_stopLoading()
             
             }, loadingView: loadingView)
-        tableView.dg_setPullToRefreshFillColor(UIColor(red: 57/255.0, green: 67/255.0, blue: 89/255.0, alpha: 1.0))
+        tableView.dg_setPullToRefreshFillColor(UIColor(red: 255/255.0, green: 75/255.0, blue: 80/255.0, alpha: 1.0))
         tableView.dg_setPullToRefreshBackgroundColor(tableView.backgroundColor!)
 
 /* Example of Yelp search with more search options specified
@@ -147,16 +147,35 @@ class BusinessesViewController: UIViewController, UITableViewDataSource, UITable
         }
     }
     
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        let cell = tableView.cellForRowAtIndexPath(indexPath) as! BusinessCell
+        performSegueWithIdentifier("detailsView", sender: cell)
     }
-    */
+    
+    
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "detailsView") {
+            let cell = sender as! BusinessCell
+            let indexPath = tableView.indexPathForCell(cell)
+            let business: Business?
+            if (filteredBusinesses.count != 0) {
+                business = filteredBusinesses[(indexPath?.row)!] as? Business
+            } else {
+                business = businesses[(indexPath?.row)!] as? Business
+            }
+            let destinationViewController = segue.destinationViewController as! DetailsViewController
+            destinationViewController.business = business
+        } else if (segue.identifier == "mapView") {
+            let destinationViewController = segue.destinationViewController as! MapViewController
+            if (filteredBusinesses.count != 0) {
+                destinationViewController.businesses = self.filteredBusinesses
+            } else {
+                destinationViewController.businesses = self.businesses
+            }
+        }
+    }
 
 }
 
