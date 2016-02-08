@@ -136,7 +136,8 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="QLD-fd-Jz1">
-                        <barButtonItem key="leftBarButtonItem" title="Map" id="JOb-sg-5Ff">
+                        <barButtonItem key="leftBarButtonItem" image="mapButton" id="JOb-sg-5Ff">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="Wcy-eJ-0HJ" kind="push" identifier="mapView" id="LRb-RY-Ucf"/>
                             </connections>
@@ -294,4 +295,7 @@
             <point key="canvasLocation" x="476" y="58"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="mapButton" width="30" height="30"/>
+    </resources>
 </document>
